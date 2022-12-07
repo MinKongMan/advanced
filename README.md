@@ -18,5 +18,5 @@
 
 # V2
   - V1에서 traceId가 일치하지 않는 오류 해결
-  >> Controller에서 traceId를 생성하고 인자를 넘겨주는 방식으로 구현
-  >> 만약 Service로 바로 실행되는 작업에 대해 오류가 발생함
+  > Controller에서 traceId를 생성하고 인자를 넘겨주는 방식으로 구현
+  > 만약 Service로 바로 실행되는 작업에 대해 오류가 발생함
