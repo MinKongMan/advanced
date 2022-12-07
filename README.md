@@ -9,14 +9,19 @@
 
 
 
-# V0
+# 베타 버전
+### V0
   - 기본적인 클래스 생성 및 기능 구현
 
-# V1
+### V1
   - Controller, Service, Repository에 구현한 기능 적용
   - 하나의 작업에 대해 아직 traceId가 일치하지 않음
 
-# V2
+### V2
   - V1에서 traceId가 일치하지 않는 오류 해결
   > Controller에서 traceId를 생성하고 인자를 넘겨주는 방식으로 구현</br>
   > 만약 Service로 바로 실행되는 작업에 대해 오류가 발생함
+
+# 정식 버전
+  - FiledLogTrace 인터페이스 생성 (모든 작업을 포함)
+  - 위 인터페이스를 구현하고 인자를 넘겨주는 작업 대신 전역 변수로 traceIdHolder 생성(아직 동시성 이슈 발생)
