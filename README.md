@@ -25,7 +25,11 @@
 # 정식 버전
   - FiledLogTrace 인터페이스 생성 (모든 작업을 포함)
   - 위 인터페이스를 구현하고 인자를 넘겨주는 작업 대신 전역 변수로 traceIdHolder 생성(아직 동시성 이슈 발생)
-
+  
+### V3
+  - logTrace 스프링 빈 등록 
+  - traceId를 인자로 넘겨주던 작업 모두 제거 
+  - Hellotrace2에서 이전에 구현했던 logTrace으로 변경
 
 # 동시성 문제 발생
   ```
